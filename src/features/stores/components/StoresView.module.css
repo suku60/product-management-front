@@ -1,0 +1,37 @@
+.statsRow {
+  display: flex;
+  gap: var(--space-8);
+  margin-bottom: var(--space-6);
+}
+.stat { display: flex; flex-direction: column; }
+.statValue { font-size: var(--text-2xl); font-weight: var(--font-weight-bold); color: var(--color-neutral-900); }
+.statLabel { font-size: var(--text-xs); color: var(--color-neutral-400); text-transform: uppercase; letter-spacing: 0.05em; }
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+  gap: var(--space-4);
+}
+.filters { display: flex; gap: var(--space-3); }
+
+.searchInput, .select {
+  height: 2.25rem;
+  padding: 0 var(--space-3);
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  background-color: var(--color-neutral-0);
+  outline: none;
+}
+.searchInput { width: 16rem; }
+.searchInput:focus, .select:focus { border-color: var(--color-brand-400); }
+
+.storeName { font-size: var(--text-sm); font-weight: var(--font-weight-medium); }
+.storeLocation { font-size: var(--text-xs); color: var(--color-neutral-400); margin-top: 2px; }
+
+.categories { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.noCategories { font-size: var(--text-xs); color: var(--color-neutral-400); }
+
+.actions { display: flex; gap: var(--space-1); }

@@ -1,0 +1,30 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) 0;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.info {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-500);
+}
+
+.info strong {
+  color: var(--color-neutral-700);
+  font-weight: var(--font-weight-semibold);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.pageIndicator {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-600);
+  white-space: nowrap;
+}

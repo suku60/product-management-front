@@ -1,0 +1,19 @@
+.shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: var(--sidebar-width);
+  min-width: 0;
+}
+
+.content {
+  flex: 1;
+  padding: var(--content-padding);
+  max-width: var(--content-max-width);
+  width: 100%;
+}
