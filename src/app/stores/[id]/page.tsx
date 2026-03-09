@@ -8,7 +8,8 @@ interface Props {
 export const metadata: Metadata = { title: 'Edit Store' };
 
 export async function generateStaticParams() {
-  const storeIds = ['store-001', 'store-002', 'store-003'];
+  const storeSimpleIds = Array.from({ length: 5 }, (_, i) => (i + 1).toString());
+  const storeIds = ['store-001', 'store-002', 'store-003', 'store-004', 'store-005'];
 
   return storeIds.map((id) => ({
     id,

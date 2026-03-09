@@ -1,0 +1,20 @@
+.loader {
+  width: 120px;
+  height: 20px;
+  background:
+   linear-gradient(var(--color-neutral-400) 0 0) left/20px 20px no-repeat
+   var(--color-neutral-200);
+  animation: l1 2s infinite linear;
+}
+
+.loader.sm {
+  height: 14px;
+}
+
+.loader.md {
+  height: 20px;
+}
+
+@keyframes l1 {
+    50% {background-position: right }
+}

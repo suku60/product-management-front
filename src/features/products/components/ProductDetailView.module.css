@@ -5,6 +5,16 @@
 }
 .breadcrumb a { color: var(--color-brand-500); }
 
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  min-height: 50vh;
+  text-align: center;
+}
+
 .layout {
   display: grid;
   grid-template-columns: 1fr 1fr;

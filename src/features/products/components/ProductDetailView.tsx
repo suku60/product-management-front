@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { AppShell } from '@/shared/components/layout/AppShell';
 import { Badge } from '@/shared/components/ui/Badge';
+import { Loader } from '@/shared/components/ui/Loader';
 import { useProductDetail } from '../hooks/useProductDetail';
 import { formatPrice } from '../utils/product.utils';
 import type { AvailabilityStatus } from '@/shared/types';
@@ -18,7 +19,10 @@ export function ProductDetailView({ productId }: ProductDetailViewProps) {
   if (status === 'loading') {
     return (
       <AppShell title="Loading…">
-        <div className={styles.skeleton} aria-busy="true" aria-label="Loading product" />
+        <div className={styles.loadingContainer}>
+          <Loader size="lg" />
+          <p>Loading product details...</p>
+        </div>
       </AppShell>
     );
   }

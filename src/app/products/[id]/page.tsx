@@ -8,7 +8,7 @@ interface Props {
 export const metadata: Metadata = { title: 'Product Detail' };
 
 export async function generateStaticParams() {
-  const productIds = Array.from({ length: 30 }, (_, i) => (i + 1).toString());
+  const productIds = Array.from({ length: 100 }, (_, i) => (i + 1).toString());
 
   return productIds.map((id) => ({
     id,
