@@ -15,7 +15,8 @@
     "test:coverage": "jest --coverage",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "deploy": "npm run build && echo 'Ready to push to main branch to trigger GitHub Actions deployment'"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",

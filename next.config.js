@@ -1,5 +1,9 @@
 const nextConfig = {
+  output: 'export',
+  basePath: '/product-management-front',
+  distDir: 'out',
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
