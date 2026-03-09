@@ -7,6 +7,14 @@ interface Props {
 
 export const metadata: Metadata = { title: 'Product Detail' };
 
+export async function generateStaticParams() {
+  const productIds = Array.from({ length: 30 }, (_, i) => (i + 1).toString());
+
+  return productIds.map((id) => ({
+    id,
+  }));
+}
+
 export default function ProductDetailPage({ params }: Props) {
   const productId = parseInt(params.id, 10);
   return <ProductDetailView productId={productId} />;
