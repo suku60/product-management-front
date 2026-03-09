@@ -17,7 +17,7 @@ const config: Config = {
     '!src/tests/**/*',
     '!src/app/**/*',
   ],
-  coverageThresholds: {
+  coverageThreshold: {
     global: {
       branches: 70,
       functions: 70,
