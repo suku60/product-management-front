@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
 
 import type { RootState } from '@/store';
-import type { Product, ProductSummary, ProductFilters, ProductSortConfig } from '@/shared/types';
+import type { Product, ProductSummary } from '@/shared/types';
 import { computeFinalPrice, isLowStock, matchesFilters, sortProducts } from '../utils/product.utils';
 
 // ─────────────────────────────────────────────────────────────
