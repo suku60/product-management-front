@@ -6,7 +6,6 @@ import { Table } from '@/shared/components/table/Table';
 import { Badge } from '@/shared/components/ui/Badge';
 import { Button } from '@/shared/components/ui/Button';
 import { useStores } from '../hooks/useStores';
-import { formatCategoryCount } from '../utils/store.utils';
 import type { Store } from '@/shared/types';
 import type { ColumnDef } from '@/shared/components/table/Table';
 import styles from './StoresView.module.css';
